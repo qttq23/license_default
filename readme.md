@@ -97,13 +97,131 @@ copyright 2019 johny adam, no rights reserved.
 https://www.legalzoom.com/articles/when-and-where-to-use-a-copyright-notice?fbclid=IwAR0gp3-l7GBJxX8-RHNLT1WFtcSIxVTZJhECzpUXn_2BNkHbeNdx05IxCv0
 
 
-binary base: ??
- needs to put LICENSE ??
- EULA ?
- Terms of service ?
- Privacy Policies ?
- community standards ?
- copyright notice in software, website??
+## binary base:
+
+### cookie policy:
+
+cookies is what you store in client's machine. (include https's cookies, html5's localStorage, sessionStorage,..)
+if you store only data for your app to work smoothly and you don't need those for processing in backend and don't transfer data to 3rd, you don't need to ask for user consent.
+examples:
+- store login info for later quick login
+- store accessed links for highlighting.
+- store preferences about colors, settings.
+
+if you store data in client then pull it for processing such as analysing user's behaviors, or if you transfer or sell user data to 3rd party, you must have cookie policies and get user consent.
+examples:
+- store user's info for counting how many active users at the present.
+- analysing user's orientation/trending.
+- sell/transfer user's cookies to 3rd.
+
+cookie consent usually appears at the firstime user visits a website. cookies consent should a link to cookie policy.
+
+details:
+https://termly.io/resources/articles/types-of-internet-cookies/
+
+https://softwareengineering.stackexchange.com/questions/290566/is-localstorage-under-the-cookie-law
+
+to generate:
+https://www.cookiepolicygenerator.com/cookie-policy-generator/
+
+
+### privacy policy:
+
+tell users what you do with the data about users in backend such as email, password, address, description,...
+and tell users what do with the data about users in frontend (cookie policy if you use it)
+
+examples:
+- what info you get from users?
+- what purposes of those info ?
+- how you secure user info ?
+- do you give user info to 3rd ?
+- can user change info or withdraw such as delete account, if so how you deal with those cases ?
+
+privacy policy usually appears in the process of creating new account. users have to check box to accept and create an account.
+
+details:
+https://www.freeprivacypolicy.com/blog/write-privacy-policy/#What_Is_A_Privacy_Policy
+
+
+to generate:
+go to:
+https://app.termly.io/dashboard
+
+click: Policies > Privacy Policy
+remember to delete the old privacy to publish new one.
+
+
+### cookie policy vs privacy policy:
+cookie policy only applies to what is stored in client's machine.
+privacy policy applies both to what is stored in client's machines and backend.
+so if you store info in backend, you must have privacy policy and in that privacy policy, include a link to cookie policy (if cookie policy is required).
+
+https://www.cookiebot.com/en/cookie-policy/
+
+
+### EULA
+same as License. 
+retain the copyright.
+grant end-user permission to use the software.
+state what users can and cannot do regarding the use of software.
+
+EULA usually presents in the installation process of desktop app or in the opening screen of mobile app after installing. uses have to accept to continue.
+(user have a copy of application)
+
+details:
+https://termly.io/resources/articles/what-is-eula/
+
+to generate:
+go to:
+https://app.termly.io/dashboard
+
+click: Policies > EULA
+remember to delete the old privacy to publish new one.
+
+(or go to: https://easylegaldocs.com/templates/agreements/eula/)
+
+
+### terms of services
+(as known as terms and conditions or terms of use)
+
+define what end-users can and cannot do regarding actions inside the service 
+such as community guidelines, good/bad behaviors, conditions to ban/disable user account.
+also define copyright and use of software.
+
+terms of services usually presents in the bottom of website. and officially confirmed when user creates an account.
+(user doesnot have a copy of application, they just use browser to access website)
+
+details:
+https://www.iubenda.com/en/help/2859-terms-and-conditions-when-are-they-needed
+
+to generate:
+go to:
+https://app.termly.io/dashboard
+
+click: Policies > Terms and Conditions
+remember to delete the old privacy to publish new one.
+
+### EULA vs terms of services
+eula is about copyright and use of software. it is like a license.
+terms of services is about both license and what proper behavior of uses inside app/services. terms of services can include a link to EULA.
+
+if you deliver an local app (desktop or mobile), you should a an EULA document for user to accept. because they have a copy of your product.
+then you can opt in a Terms of Services document if you define user behaviors in app.
+
+if you deliver a service (website), you don't need EULA, but you will need Terms of Services which defines proper user behaviors in service.
+
+
+http://www.differencebetween.info/difference-between-eula-and-terms-of-use
+
+
+
+### others
+
+community standards/guildlines ??
+
+
+needs to put LICENSE in binary: no
+copyright notice in software, website: presents in EULA or Terms of Services.
 
 
 # Proprietary software: ??
